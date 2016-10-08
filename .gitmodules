@@ -1,0 +1,3 @@
+[submodule "generators/javascript"]
+	path = generators/javascript
+	url = git@github.com:bnjjj/convention-subgenerator-javascript.git

@@ -1,0 +1,48 @@
+{
+  "name": "generator-convention",
+  "version": "0.0.16",
+  "description": "A yeoman generator to build conventions and styleguides easily",
+  "main": "./generators/app/index.js",
+  "scripts": {
+    "test": "mocha ./generators/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnjjj/generator-convention.git"
+  },
+  "keywords": [
+    "yeoman",
+    "generator",
+    "convention",
+    "styleguide",
+    "eslint",
+    "build",
+    "js",
+    "linter",
+    "yeoman-generator"
+  ],
+  "author": {
+    "name": "Benjamin Coenen",
+    "email": "benjamin.coenen@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bnjjj/generator-convention/issues"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/bnjjj/generator-convention",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^0.10.0",
+    "lodash": "^3.10.1",
+    "opn": "^3.0.2",
+    "require-dir": "^0.3.0",
+    "yeoman-generator": "^0.20.3",
+    "yosay": "^1.0.5"
+  },
+  "devDependencies": {
+    "all-eslint-rules": "^2.1.1",
+    "eslint": "^3.7.0",
+    "mocha": "^2.3.2"
+  }
+}
