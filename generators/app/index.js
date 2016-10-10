@@ -25,12 +25,17 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
     var self = this;
     var done = self.async();
 
-    self.prompt({
+    self.prompt([{
       type: 'list',
       name: 'module',
       message: 'Which languages would you like to use?',
       choices: self.modules
-    }, function (answer) {
+    },{
+      type: 'list',
+      name: 'level_config',
+      message: 'Which level of configuration do you want ?',
+      choices: ["beginner", "confirm","expert"]
+    }], function (answer) {
       self.vars = _.assign({}, self.vars, answer);
       done();
     });
@@ -39,7 +44,7 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
   configuring: function () {
     var self = this;
 
-    self.composeWith(['convention', self.vars.module].join(':'));
+    self.composeWith(['convention', self.vars.module].join(':'), self.vars);
   },
 
 
